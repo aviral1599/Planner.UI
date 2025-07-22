@@ -15,8 +15,6 @@ export const CodeWindow = ({ title, children }: any) => {
     // Prism.highlightAll();
   }, []);
 
-  let child = Children.only(children);
-
   const [buttonText, setButtonText] = useState("Copy");
   const childRef = useRef<any>(null);
 

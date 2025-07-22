@@ -28,7 +28,6 @@ export function BlogLayout({
   isRssFeed = false,
   previousPathname,
 }: any) {
-  let router = useRouter();
 
   return (
     <Container>

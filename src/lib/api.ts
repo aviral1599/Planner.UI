@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5073/api", // Replace with your actual backend URL
+  baseURL: "https://planner-api-bdqj.onrender.com/api", // Replace with your actual backend URL
 });
 
 // Automatically attach token to all requests
