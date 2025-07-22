@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { Mail, Lock, User, Chrome } from "lucide-react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Auth = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -36,7 +36,7 @@ const Auth = () => {
       <div className="w-full max-w-md animate-fade-in">
         {/* Header */}
         <div className="text-center mb-8">
-          <Link to="/" className="inline-block">
+          <Link href="/" className="inline-block">
             <h1 className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               ProductivePro
             </h1>
@@ -259,7 +259,7 @@ const Auth = () => {
 
         {/* Back to Home */}
         <div className="text-center mt-6">
-          <Link to="/">
+          <Link href="/">
             <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               ← Back to Home
             </Button>
